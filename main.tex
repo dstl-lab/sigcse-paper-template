@@ -1,0 +1,165 @@
+%% For submission and review of your manuscript please change the
+%% command to \documentclass[manuscript, screen, review]{acmart}.
+%%
+%% When submitting camera ready or to TAPS, please change the command
+%% to \documentclass[sigconf]{acmart} or whichever template is required
+%% for your publication.
+%%
+%%
+\documentclass[sigconf,screen,review]{acmart}
+% \documentclass[sigconf]{acmart}
+
+\usepackage{xspace}
+
+\copyrightyear{20}
+\acmYear{2027}
+\setcopyright{cc}
+\setcctype{by}
+\acmConference[SIGCSE TS 2026]{Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.1}{February 18--21, 2026}{St. Louis, MO, USA}
+\acmBooktitle{Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.1 (SIGCSE TS 2026), February 18--21, 2026, St. Louis, MO, USA}
+\acmPrice{}
+\acmDOI{xx.xxxx/xxxxxx.xxxxxx}
+\acmISBN{xxx-xxx-xx-xx-xx}
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% START Sam's shortcuts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Consistent cross referencing
+\def\fig#1{Figure~\ref{#1}}
+\def\tab#1{Table~\ref{#1}}
+\def\eqn#1{Equation~\ref{#1}}
+\def\sec#1{Section~\ref{#1}}
+
+% Make it easy to change format of certain names
+\hyphenation{auto-ethno-gra-phy}
+\hyphenation{auto-ethno-gra-phic}
+\hyphenation{auto-gra-der}
+
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[#1]}}}
+% Make it REALLY OBVIOUS so we get them all
+% \newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODODODODODODO: #1]}}}
+
+% Use \code{stuff} to make 'stuff' appear as code. Only useful for short
+% amounts of code.
+\newcommand{\code}[1]{\texttt{#1}}
+
+\newcommand{\pd}{\code{pandas}\xspace}
+
+
+
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title[Template]{SIGCSE Paper Template}
+
+
+\author{Anonymized for Review}
+\affiliation{%
+  \institution{Anon}
+  \city{Anon}
+  \country{Anon}}
+\email{anon@anon.edu}
+
+\author{Anonymized for Review}
+\affiliation{%
+  \institution{Anon}
+  \city{Anon}
+  \country{Anon}}
+\email{anon@anon.edu}
+
+\author{Anonymized for Review}
+\affiliation{%
+  \institution{Anon}
+  \city{Anon}
+  \country{Anon}}
+\email{anon@anon.edu}
+
+\author{Anonymized for Review}
+\affiliation{%
+  \institution{Anon}
+  \city{Anon}
+  \country{Anon}}
+\email{anon@anon.edu}
+
+% \author{Sam Lau}
+% \affiliation{%
+%   \institution{University of California San Diego}
+%   \city{La Jolla}
+%   \country{USA}}
+% \email{lau@ucsd.edu}
+
+% \renewcommand{\shortauthors}{Anonymized for review}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+  write me
+\end{abstract}
+
+\begin{CCSXML}
+  <ccs2012>
+  <concept>
+  <concept_id>10003120.10003121.10011748</concept_id>
+  <concept_desc>Human-centered computing~Empirical studies in HCI</concept_desc>
+  <concept_significance>500</concept_significance>
+  </concept>
+  </ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Human-centered computing~Empirical studies in HCI}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{todo}
+
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+%% page.
+% \begin{teaserfigure}
+%   \includegraphics[width=\textwidth]{sampleteaser}
+%   \caption{TODO: replace with small diagram showing contentgen}
+%   \label{fig:teaser}
+% \end{teaserfigure}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+
+\section{Related Work}
+
+\section{Discussion}
+
+% \section{Conclusion}
+
+% placeholder
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\balance
+
+% Sam: sam-refs file has the references I'm using and it's auto-generated from
+% Zotero, so it gets overwritten all the time. I recommend other authors to add
+% their own refs to a separate bibtex to avoid conflicts.
+\bibliography{sam-refs}
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-sigconf.tex'.
